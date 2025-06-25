@@ -1,0 +1,34 @@
+package basics
+
+import "fmt"
+
+// This varible we can access anywhere inside this package
+ var globalVariable = "Global varible"
+func main() {
+	// This is intialize variable in go
+	var age int
+
+	//  Also declaring the type of the varible is optional in go
+	var name string = "Shivraj"
+	var name1 = "Bhapkar"
+
+	//  other way to declare the variable in go(know as Gopher way )
+	count := 10
+	lastName := "Madhuri"
+
+	// Defaults values in go
+	// Numeric Types : 0
+	// Boolean Types : false
+	// String Type:""
+	// Pointers , slices , maps , functions , and structs : nil
+
+	//  -- SCOPE in GO 
+
+	// We can't access firstName as it has scope to that function printName
+	// fmt.Println(firstName)
+
+}
+func printName() {
+firstName:="Shivraj"
+fmt.Println(firstName)
+}
